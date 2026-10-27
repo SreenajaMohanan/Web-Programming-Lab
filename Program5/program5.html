@@ -1,0 +1,45 @@
+<html>
+ <head>
+  <title>Form</title>
+  <link rel="stylesheet" href="program5.css">
+ </head>
+ <body>
+   <h1><center>REGISTRATION FORM</center></h1>
+  <div class="container">
+   <form>
+     <fieldset><legend>User-Information</legend><br>
+       <label for="name">Name</label>
+         <select>
+           <option>Mr.</option>
+           <option>Mrs.</option>
+           <option>Miss.</option>
+         </select><input type="name" placeholder=" " id=" " required><br><br>
+        <label for="phone" required>Phone</label><br>
+        <input type="tel" placeholder=" " id=" " required>&nbsp;&nbsp;&nbsp;
+        <label for="email">Email&nbsp;&nbsp;<input type="email" placeholder =" " id=" " required></label>
+     </fieldset><br>
+     <label for="address">Address</label>
+     <textarea cols="35" rows="3" required></textarea><br><br>
+     <label for="gender">Gender</label>
+     <input type="radio"><label for="male">Male</label>
+     <input type="radio"><label for="female">Female</label>
+     <input type="radio"><label for="others">Others</label><br><br>
+     <label for="lang">Languages Known</label>
+     <input type="checkbox"><label>English</label>
+     <input type="checkbox"><label>Malayalam</label>
+     <input type="checkbox"><label>Hindi</label><br><br>
+     <label for="course">Course</label>
+     <select name="course" id="">choose course
+     	<option value="mca">MCA</option>
+     	<option value="bca">BCA</option>
+     	<option value="mba">MBA</option>
+     	<option value="bba">BBA</option>
+     	<option value="msw">MSW</option>
+     	<option value="bsw">BSW</option>
+     </select><br><br>
+     <button type="button" class="btn1">Reset</button>
+     <button type="button" class="btn2">Submit</button>
+   </form>
+  </div>
+ </body>
+</html>
