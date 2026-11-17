@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Event Handling</title>
+<style>
+.button {
+   display : block;
+   margin : 100px auto;
+   padding: 10px 35px;
+   font-size : 26px;
+}
+
+.p {
+   text-align : center;
+}
+</style>
+</head>
+<body>
+<h1><center>Javascript - Event Handling</center></h1><br><br>
+<button class ="button" onclick = "background()">Click Me</button>
+<p class="p">When we click on the button, the background colour will change.</p>
+<script>
+	function background(){
+		var r = Math.floor(Math.random()*256);
+		var g = Math.floor(Math.random()*256);
+		var b = Math.floor(Math.random()*256);
+	document.body.style.backgroundColor = "rgb("+r+","+g+","+b+")";
+	}
+</script>
+</body>
+</html>
+

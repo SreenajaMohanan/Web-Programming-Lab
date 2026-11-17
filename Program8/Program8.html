@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Mouseover - event</title>
+</head>
+<style>
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.imgee {
+  height: 300px;
+  width: 400px;
+  border-radius:50%;
+  object-fit: cover;
+  padding: 10px;
+  border: 4px solid blue;
+}
+</style>
+<body>
+<img class="imgee" src="img1.jpeg" id="image" onmouseover = "one()" onmouseout = "two()">
+<p id = "p1">NICE DAY</p>
+
+<script>
+   function one(){
+   	document.getElementById("image").src="img2.jpeg";
+   	document.getElementById("p1").innerHTML="onmouseover";
+   	document.getElementById("p1").style.color="blue";
+   }
+   
+   function two(){
+   	document.getElementById("image").src="img3.jpeg";
+   	document.getElementById("p1").innerHTML="onmouseout";
+   	document.getElementById("p1").style.color="red";
+   }
+</script>
+</body>
+</html>
